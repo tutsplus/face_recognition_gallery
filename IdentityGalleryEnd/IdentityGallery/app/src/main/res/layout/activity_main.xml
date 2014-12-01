@@ -1,0 +1,18 @@
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="auto_fit"
+    android:columnWidth="@dimen/grid_width"
+    android:verticalSpacing="@dimen/gallery_grid_padding"
+    android:horizontalSpacing="@dimen/gallery_grid_padding"
+    android:gravity="center"
+    android:drawSelectorOnTop="true"
+    android:stretchMode="columnWidth"
+    android:background="#ffffff"
+    android:paddingLeft="@dimen/activity_horizontal_padding"
+    android:paddingRight="@dimen/activity_horizontal_padding"
+    android:paddingTop="@dimen/activity_vertical_padding"
+    android:paddingBottom="@dimen/activity_vertical_padding"
+    >
+</GridView>

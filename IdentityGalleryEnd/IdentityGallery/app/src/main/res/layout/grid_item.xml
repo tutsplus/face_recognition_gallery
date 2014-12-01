@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/grid_width"
+    android:layout_height="@dimen/grid_height"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/grid_width"
+        android:layout_height="@dimen/grid_height"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

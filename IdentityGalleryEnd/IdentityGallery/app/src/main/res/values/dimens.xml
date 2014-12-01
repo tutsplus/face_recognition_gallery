@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="activity_horizontal_padding">4dp</dimen>
+    <dimen name="activity_vertical_padding">4dp</dimen>
+    <dimen name="gallery_grid_padding">4dp</dimen>
+    <dimen name="grid_width">120dp</dimen>
+    <dimen name="grid_height">120dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
