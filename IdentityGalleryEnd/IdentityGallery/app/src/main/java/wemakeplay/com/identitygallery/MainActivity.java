@@ -91,6 +91,10 @@ public class MainActivity extends Activity {
 
     /** make sure this photo has detected identities **/
     private boolean isValid(long id){
+        if(id == -1){
+            return true;
+        }
+        
         Cursor cursor = getContentResolver().query(
                 IdentityGalleryContract.PhotoIdentityEntity.CONTENT_URI,
                 new String[]{IdentityGalleryContract.PhotoIdentityEntity._ID},

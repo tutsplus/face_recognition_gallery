@@ -31,7 +31,9 @@ public class GalleryScanner {
         mLastPhotoAddedDate = lastPhotoAddedDate;
     }
 
-    public void scan(){
+    public void scan() throws UnsupportedOperationException{
+        initFacialProcessing();
+
         Cursor externalCursor = mContext.getContentResolver().query(
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI, mMediaProjection,
                 MediaStore.Images.Media.DATE_ADDED + " > ?",
@@ -65,6 +67,9 @@ public class GalleryScanner {
                     continue;
                 }
                 photoCursor.close();
+
+                // hook method
+                processImage(contentValues, contentUri);
             } while(externalCursor.moveToNext());
         }
         externalCursor.close();
@@ -87,9 +92,14 @@ public class GalleryScanner {
                     continue;
                 }
                 photoCursor.close();
+
+                // hook method
+                processImage(contentValues, contentUri);
             }while (internalCursor.moveToNext());
         }
         internalCursor.close();
+
+        deinitFacialProcessing();
     }
 
     private ContentValues createPhotoValuesFromCursor(Cursor cursor, Uri queryUri) {
@@ -106,5 +116,17 @@ public class GalleryScanner {
         value.put(IdentityGalleryContract.PhotoEntity.COLUMN_URI, uri.toString());
 
         return value;
+    }
+
+    private void initFacialProcessing() throws UnsupportedOperationException{
+        throw new UnsupportedOperationException("Hook method is not currently implemented");
+    }
+
+    private void processImage(ContentValues contentValues, Uri contentUri){
+        throw new UnsupportedOperationException("Hook method is not currently implemented");
+    }
+
+    private void deinitFacialProcessing(){
+        throw new UnsupportedOperationException("Hook method is not currently implemented");
     }
 }

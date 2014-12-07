@@ -48,7 +48,9 @@ public class GalleryScannerIntentService extends IntentService {
      * Handle action Scan in the provided background thread
      */
     private void handleActionScan() {
-        new GalleryScanner(this.getApplicationContext(), getLastPhotoAddedDate()).scan();
+        try {
+            new GalleryScanner(this.getApplicationContext(), getLastPhotoAddedDate()).scan();
+        } catch(UnsupportedOperationException e){}
     }
 
     private long getLastPhotoAddedDate(){
