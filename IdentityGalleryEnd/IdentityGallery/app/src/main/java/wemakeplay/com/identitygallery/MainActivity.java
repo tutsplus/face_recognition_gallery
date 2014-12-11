@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
         if(id == -1){
             return true;
         }
-        
+
         Cursor cursor = getContentResolver().query(
                 IdentityGalleryContract.PhotoIdentityEntity.CONTENT_URI,
                 new String[]{IdentityGalleryContract.PhotoIdentityEntity._ID},
