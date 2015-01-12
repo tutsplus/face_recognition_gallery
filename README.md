@@ -1,7 +1,9 @@
-### Tuts+ Tutorial: Identifying People with Qualcomm Snapdragon SDK
+### Tuts+ Tutorial: Identifying People With Qualcomm's Snapdragon SDK
 
-#### Instructor: Joshua Newnham	
+#### Instructor: Joshua Newnham
 
-Accompanying project for the Identifying People with Qualcomm Snapdragon SDK tutorial; Gallery where-by the user can filter based on identity/ies.   
+In this tutorial, you'll learn how you can take advantage of Qualcomm's Snapdragon SDK to derive metadata from your photos, giving users new ways to explore their content.
 
-**Available on Tuts+ TBA
+Source files for the Tuts+ tutorial: [Identifying People With Qualcomm's Snapdragon SDK](http://code.tutsplus.com/tutorials/identifying-people-with-qualcomms-snapdragon-sdk--cms-22831)
+
+**Read this tutorial on [Tuts+](https://code.tutsplus.com)**
